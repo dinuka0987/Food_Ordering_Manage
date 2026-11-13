@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F2"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Food Order"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#40271B"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One food item per order"
+            android:textColor="#70594B"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/etOrderNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="#40271B"
+            android:textColorHint="#70594B"
+            android:hint="Order number"
+            android:inputType="textCapCharacters"
+            android:maxLength="40"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/etCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="#40271B"
+            android:textColorHint="#70594B"
+            android:hint="Customer name"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="#40271B"
+            android:textColorHint="#70594B"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:maxLength="25"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/etFoodItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="#40271B"
+            android:textColorHint="#70594B"
+            android:hint="Food item (e.g. Chicken rice)"
+            android:inputType="textCapSentences"
+            android:maxLength="150"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="#40271B"
+            android:textColorHint="#70594B"
+            android:hint="Quantity (1 to 9999)"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/etUnitPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="#40271B"
+            android:textColorHint="#70594B"
+            android:hint="Unit price (e.g. 850.00)"
+            android:inputType="numberDecimal"
+            android:maxLength="9"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/spStatus"
+            android:text="Order status"
+            android:textColor="#40271B"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@id/spStatus"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#B9471D"
+            android:layout_marginBottom="18dp" />
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="52dp"
+            android:text="Place Order"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>
